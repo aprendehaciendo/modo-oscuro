@@ -1,0 +1,241 @@
+/*variables*/
+:root {
+  --colorPrincipal: #391ba6;
+  --colorSecundario: #f20cb5;
+  --colorMagentaOscuro: #8c035c;
+  --colorLila: #5a30f2;
+  --colorNegro: #0d0d0d;
+  /*escala de grises*/
+  --colorBlanco: #ffffff;
+  --colorGris1: #b8b8b8;
+  --colorGris2: #727272;
+  --colorGris3: #3f3f3f;
+  --colorGris4: #f2f2f2;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  /* background: var(--colorPrincipal); */
+}
+
+/* estilo de fondo */
+
+.app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--colorPrincipal);
+  overflow: hidden;
+  box-shadow: inset -15px -15px 80px rgba(0, 0, 0, 0.15);
+}
+
+.app:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--colorGris4);
+  bottom: -45%;
+  transform-origin: left bottom;
+  border-top-left-radius: 10% 3%;
+  border-top-right-radius: 10% 3%;
+}
+
+/* estilos de la iamgen de perfil */
+.borde {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  padding: 7px;
+  border-radius: 50%;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+}
+
+.borderFoto {
+  border: 1.5px solid var(--colorSecundario);
+  background-clip: content-box;
+  border-radius: 50%;
+}
+
+/* estilo del nombre */
+
+.textNombre {
+  font-weight: 600;
+  color: var(--colorBlanco);
+}
+
+.textFechaInicio {
+  color: var(--colorGris1);
+}
+
+.btnCompartirPerfil {
+  background-color: var(--colorNegro);
+  color: var(--colorBlanco);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 40px;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* estilos cajas de categorias */
+
+.categoria {
+  margin-top: 3em;
+  margin-bottom: 5em;
+}
+
+.cajaCategorias {
+  background: var(--colorBlanco);
+  padding: 20px 15px 20px 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.5);
+}
+
+.shopping i {
+  font-size: 1.5em;
+  color: #01e8e9;
+  background: rgba(88, 49, 205, 0.1);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.shopping p {
+  margin-top: 0.5em;
+  font-weight: 600;
+  color: var(--colorGris3);
+}
+
+.ubers i {
+  font-size: 1.5em;
+  color: var(--colorPrincipal);
+  background: rgba(88, 49, 205, 0.1);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.ubers p {
+  margin-top: 0.5em;
+  font-weight: 600;
+  color: var(--colorGris3);
+}
+
+.comestibles i {
+  font-size: 1.5em;
+  color: #f5642b;
+  background: rgba(88, 49, 205, 0.1);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.comestibles p {
+  margin-top: 0.5em;
+  font-weight: 600;
+  color: var(--colorGris3);
+}
+
+.datos i {
+  font-size: 1.5em;
+  color: #f53021;
+  background: rgba(88, 49, 205, 0.1);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.datos p {
+  margin-top: 0.5em;
+  font-weight: 600;
+  color: var(--colorGris3);
+}
+
+.estadistica i {
+  font-size: 1.5em;
+  color: var(--colorSecundario);
+  background: rgba(88, 49, 205, 0.1);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.estadistica p {
+  margin-top: 0.5em;
+  font-weight: 600;
+  color: var(--colorGris3);
+}
+
+.tarjeta i {
+  font-size: 1.5em;
+  color: #1ecbf5;
+  background: rgba(88, 49, 205, 0.1);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.tarjeta p {
+  margin-top: 0.5em;
+  font-weight: 600;
+  color: var(--colorGris3);
+}
+
+.footer {
+  background: var(--colorBlanco) !important;
+  padding-top: 14px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.footer i {
+  color: var(--colorGris2);
+}
+
+.footer p {
+  font-size: 0.7em;
+  color: var(--colorGris2);
+}
+
+.footer .activo i {
+  color: #1ecbf5;
+}
+
+.footer .activo p {
+  color: #1ecbf5;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--colorNegro);
+  }
+  .app {
+    background: #0d0d0d;
+    box-shadow: inset -15px -15px 80px rgba(0, 0, 0, 0.15);
+  }
+
+  .app:before {
+    background: var(--colorGris3);
+  }
+
+  .textNombre {
+    font-weight: 600;
+    color: var(--colorGris4);
+  }
+
+  .textFechaInicio {
+    color: var(--colorGris2);
+  }
+
+  .btnCompartirPerfil {
+    background-color: var(--colorGris3);
+    color: var(--colorBlanco);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.8);
+  }
+  .cajaCategorias {
+    background: #1f1f1f;
+  }
+
+  .cajaCategorias p {
+    color: var(--colorGris4);
+  }
+
+  .footer {
+    background: #0d0d0d !important;
+  }
+}
